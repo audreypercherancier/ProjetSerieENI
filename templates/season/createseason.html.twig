@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div>
+        {{ form_start(seasonForm)}}
+        {{ form_widget(seasonForm) }}
+        <button>Create!</button>
+        {{ form_end(seasonForm)}}
+    </div>
+    {% for label, messages in app.flashes %}
+        {% for message in messages %}
+            <div class="flash flash-{{ label }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+{% endblock %}
+{% block title %}
+    Create a new season | {{ parent() }}
+{% endblock %}

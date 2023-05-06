@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
@@ -19,6 +18,9 @@
     <ul>
         <li><a href="{{ path('main_home') }}" title="Home">Home</a></li>
         <li><a href="{{ path('main_test') }}" title="Test">Test</a></li>
+        <li><a href="{{ path('serie_list') }}" title="AllSeries">All Series</a></li>
+        <li><a href="{{ path('serie_create') }}" title="Create">Create new serie</a></li>
+        <li><a href="{{ path("season_create") }}" title="Create a new season">Create season</a></li>
     </ul>
 </nav>
 </header>
